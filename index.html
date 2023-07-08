@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Kemitraan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="logo Baru.jpg" type="image/x-icon">
+  <link rel="icon" href="img/logo Baru-modified.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="form-container">
+    <h1>Laporan Lead <br><span>Jafa Boga Artha</span></h1>
+    <form name="form-kontak">
+      <div class="form-input">
+        <label for="deal-maker">CS Marketing:</label>
+        <select id="deal-maker" name="deal-maker" required>
+          <option value="" selected disabled>Pilih CS Marketing</option>
+          <option value="Livia">Livia</option>
+          <option value="Reka">Reka</option>
+          <option value="Risma">Risma</option>
+        </select>
+      </div>
+      <div class="form-input">
+        <label for="tanggal">Tanggal Lead Masuk:</label>
+        <div class="input-group">
+          <input type="text" id="tanggal" name="tanggal" class="form-control" required>
+          <div class="input-group-append">
+            <span class="input-group-text">
+              <i class="fas fa-calendar-alt"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="form-input">
+        <label for="franchise">Nama Franchise:</label>
+        <select id="franchise" name="nama-franchise" onchange="showInputForms()">
+          <option value="">--Pilih Franchise--</option>
+          <option value="You Need Mie">You Need Mie</option>
+          <option value="Mentoast">Mentoast</option>
+          <option value="My Bestea">My Bestea</option>
+          <option value="Raja Steak">Raja Steak</option>
+          <option value="Chick Ichick">Chick Ichick</option>
+          <option value="Chacarica">Chacarica</option>
+          <option value="Tahu Nyonyor">Tahu Nyonyor</option>
+          <option value="Kuy Cheesetea">Kuy Cheesetea</option>
+          <option value="Chickuruyuk">Chickuruyuk</option>
+          <option value="Republik Coklat">Republik Coklat</option>
+          <option value="Nice Coffe">Nice Coffe</option>
+          <option value="Boba Empire">Boba Empire</option>
+          <option value="Mizterpi">Mizterpi</option>
+          <option value="Overthink Drink">Overthink Drink</option>
+          <option value="New Product">New Product</option>
+        </select>
+      </div>
+    
+      <div id="form2" style="display: none;">
+        <div class="form-input">
+          <label for="instagram">Instagram</label>
+          <input type="text" id="instagram" name="Instagram">
+        </div>
+    
+        <div class="form-input">
+          <label for="tiktok">Tiktok</label>
+          <input type="text" id="tiktok" name="Tiktok">
+        </div>
+    
+        <div class="form-input">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="Website">
+        </div>
+      </div>
+    
+    
+      <div class="form-input">
+        <label for="franchise1">Nama Franchise:</label>
+        <select id="franchise1" name="nama-franchise1" onchange="showInputForms()">
+          <option value="">--Pilih Franchise--</option>
+          <option value="You Need Mie">You Need Mie</option>
+          <option value="Mentoast">Mentoast</option>
+          <option value="My Bestea">My Bestea</option>
+          <option value="Raja Steak">Raja Steak</option>
+          <option value="Chick Ichick">Chick Ichick</option>
+          <option value="Chacarica">Chacarica</option>
+          <option value="Tahu Nyonyor">Tahu Nyonyor</option>
+          <option value="Kuy Cheesetea">Kuy Cheesetea</option>
+          <option value="Chickuruyuk">Chickuruyuk</option>
+          <option value="Republik Coklat">Republik Coklat</option>
+          <option value="Nice Coffe">Nice Coffe</option>
+          <option value="Boba Empire">Boba Empire</option>
+          <option value="Mizterpi">Mizterpi</option>
+          <option value="Overthink Drink">Overthink Drink</option>
+          <option value="New Product">New Product</option>
+        </select>
+      </div>
+    
+      <div id="form3" style="display: none;">
+        <div class="form-input">
+          <label for="instagram1">Instagram</label>
+          <input type="text" id="instagram1" name="Instagram1">
+        </div>
+    
+        <div class="form-input">
+          <label for="tiktok1">Tiktok</label>
+          <input type="text" id="tiktok1" name="Tiktok1">
+        </div>
+    
+        <div class="form-input">
+          <label for="website1">Website</label>
+          <input type="text" id="website1" name="Website1">
+        </div>
+      </div>
+    
+      <div class="form-input">
+        <label for="franchise2">Nama Franchise:</label>
+        <select id="franchise2" name="nama-franchise2" onchange="showInputForms()">
+          <option value="">--Pilih Franchise--</option>
+          <option value="You Need Mie">You Need Mie</option>
+          <option value="Mentoast">Mentoast</option>
+          <option value="My Bestea">My Bestea</option>
+          <option value="Raja Steak">Raja Steak</option>
+          <option value="Chick Ichick">Chick Ichick</option>
+          <option value="Chacarica">Chacarica</option>
+          <option value="Tahu Nyonyor">Tahu Nyonyor</option>
+          <option value="Kuy Cheesetea">Kuy Cheesetea</option>
+          <option value="Chickuruyuk">Chickuruyuk</option>
+          <option value="Republik Coklat">Republik Coklat</option>
+          <option value="Nice Coffe">Nice Coffe</option>
+          <option value="Boba Empire">Boba Empire</option>
+          <option value="Mizterpi">Mizterpi</option>
+          <option value="Overthink Drink">Overthink Drink</option>
+          <option value="New Product">New Product</option>
+        </select>
+      </div>
+    
+      <div id="form4" style="display: none;">
+        <div class="form-input">
+          <label for="instagram2">Instagram</label>
+          <input type="text" id="instagram2" name="Instagram2">
+        </div>
+    
+        <div class="form-input">
+          <label for="tiktok2">Tiktok</label>
+          <input type="text" id="tiktok2" name="Tiktok2">
+        </div>
+    
+        <div class="form-input">
+          <label for="website2">Website</label>
+          <input type="text" id="website2" name="Website2">
+        </div>
+      </div>
+
+      <div class="form-input">
+        <label for="franchise3">Nama Franchise:</label>
+        <select id="franchise3" name="nama-franchise3" onchange="showInputForms()">
+          <option value="">--Pilih Franchise--</option>
+          <option value="You Need Mie">You Need Mie</option>
+          <option value="Mentoast">Mentoast</option>
+          <option value="My Bestea">My Bestea</option>
+          <option value="Raja Steak">Raja Steak</option>
+          <option value="Chick Ichick">Chick Ichick</option>
+          <option value="Chacarica">Chacarica</option>
+          <option value="Tahu Nyonyor">Tahu Nyonyor</option>
+          <option value="Kuy Cheesetea">Kuy Cheesetea</option>
+          <option value="Chickuruyuk">Chickuruyuk</option>
+          <option value="Republik Coklat">Republik Coklat</option>
+          <option value="Nice Coffe">Nice Coffe</option>
+          <option value="Boba Empire">Boba Empire</option>
+          <option value="Mizterpi">Mizterpi</option>
+          <option value="Overthink Drink">Overthink Drink</option>
+          <option value="New Product">New Product</option>
+        </select>
+      </div>
+    
+      <div id="form5" style="display: none;">
+        <div class="form-input">
+          <label for="instagram3">Instagram</label>
+          <input type="text" id="instagram3" name="Instagram3">
+        </div>
+    
+        <div class="form-input">
+          <label for="tiktok3">Tiktok</label>
+          <input type="text" id="tiktok3" name="Tiktok3">
+        </div>
+    
+        <div class="form-input">
+          <label for="website3">Website</label>
+          <input type="text" id="website3" name="Website3">
+        </div>
+      </div>
+      <div class="form-input">
+        <label for="franchise4">Nama Franchise:</label>
+        <select id="franchise4" name="nama-franchise4" onchange="showInputForms()">
+          <option value="">--Pilih Franchise--</option>
+          <option value="You Need Mie">You Need Mie</option>
+          <option value="Mentoast">Mentoast</option>
+          <option value="My Bestea">My Bestea</option>
+          <option value="Raja Steak">Raja Steak</option>
+          <option value="Chick Ichick">Chick Ichick</option>
+          <option value="Chacarica">Chacarica</option>
+          <option value="Tahu Nyonyor">Tahu Nyonyor</option>
+          <option value="Kuy Cheesetea">Kuy Cheesetea</option>
+          <option value="Chickuruyuk">Chickuruyuk</option>
+          <option value="Republik Coklat">Republik Coklat</option>
+          <option value="Nice Coffe">Nice Coffe</option>
+          <option value="Boba Empire">Boba Empire</option>
+          <option value="Mizterpi">Mizterpi</option>
+          <option value="Overthink Drink">Overthink Drink</option>
+          <option value="New Product">New Product</option>
+        </select>
+      </div>
+    
+      <div id="form6" style="display: none;">
+        <div class="form-input">
+          <label for="instagram4">Instagram</label>
+          <input type="text" id="instagram4" name="Instagram4">
+        </div>
+    
+        <div class="form-input">
+          <label for="tiktok4">Tiktok</label>
+          <input type="text" id="tiktok4" name="tiktok4">
+        </div>
+    
+        <div class="form-input">
+          <label for="website4">Website</label>
+          <input type="text" id="website4" name="website4">
+        </div>
+      </div>
+      <div class="form-input">
+        <label for="franchise5">Nama Franchise:</label>
+        <select id="franchise5" name="nama-franchise5" onchange="showInputForms()">
+          <option value="">--Pilih Franchise--</option>
+          <option value="You Need Mie">You Need Mie</option>
+          <option value="Mentoast">Mentoast</option>
+          <option value="My Bestea">My Bestea</option>
+          <option value="Raja Steak">Raja Steak</option>
+          <option value="Chick Ichick">Chick Ichick</option>
+          <option value="Chacarica">Chacarica</option>
+          <option value="Tahu Nyonyor">Tahu Nyonyor</option>
+          <option value="Kuy Cheesetea">Kuy Cheesetea</option>
+          <option value="Chickuruyuk">Chickuruyuk</option>
+          <option value="Republik Coklat">Republik Coklat</option>
+          <option value="Nice Coffe">Nice Coffe</option>
+          <option value="Boba Empire">Boba Empire</option>
+          <option value="Mizterpi">Mizterpi</option>
+          <option value="Overthink Drink">Overthink Drink</option>
+          <option value="New Product">New Product</option>
+        </select>
+      </div>
+    
+      <div id="form7" style="display: none;">
+        <div class="form-input">
+          <label for="instagram5">Instagram</label>
+          <input type="text" id="instagram5" name="instagram5">
+        </div>
+    
+        <div class="form-input">
+          <label for="tiktok5">Tiktok</label>
+          <input type="text" id="tiktok5" name="tiktok5">
+        </div>
+    
+        <div class="form-input">
+          <label for="website5">Website</label>
+          <input type="text" id="website5" name="website5">
+        </div>
+      </div>
+      <button type="submit">Kirim</button>
+    </form>
+
+    <script>
+      function showInputForms() {
+        var franchiseSelect = document.getElementById("franchise");
+        var franchise1Select = document.getElementById("franchise1");
+        var franchise2Select = document.getElementById("franchise2");
+        var franchise3Select = document.getElementById("franchise3");
+        var franchise4Select = document.getElementById("franchise4");
+        var franchise5Select = document.getElementById("franchise5");
+
+        var form2 = document.getElementById("form2");
+        var form3 = document.getElementById("form3");
+        var form4 = document.getElementById("form4");
+        var form5 = document.getElementById("form5");
+        var form7 = document.getElementById("form7");
+    
+        if (franchiseSelect.value !== "") {
+          form2.style.display = "block";
+        } else {
+          form2.style.display = "none";
+        }
+    
+        if (franchise1Select.value !== "") {
+          form3.style.display = "block";
+        } else {
+          form3.style.display = "none";
+        }
+    
+        if (franchise2Select.value !== "") {
+          form4.style.display = "block";
+        } else {
+          form4.style.display = "none";
+        }
+    
+        if (franchise3Select.value !== "") {
+          form5.style.display = "block";
+        } else {
+          form5.style.display = "none";
+        }
+        if (franchise4Select.value !== "") {
+          form6.style.display = "block";
+        } else {
+          form6.style.display = "none";
+        }
+        if (franchise5Select.value !== "") {
+          form7.style.display = "block";
+        } else {
+          form7.style.display = "none";
+        }
+      }
+    </script>
+    
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzGNlRTDPb3MyMtCcqQSO4e0yA0kJlZsTElwEoVM1r6E-UdWhDB2V76RHsnk3mBGnSJ/exec';
+    const form = document.forms['form-kontak'];
+    let isSubmitting = false;
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      if (isSubmitting) {
+        return;
+      }
+
+      isSubmitting = true;
+
+      alert('Kami sedang mengirimkan jawaban formulir Anda. Silakan tunggu sebentar!');
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          if (response.ok) {
+            alert('Formulir terkirim! Silakan konfirmasi dengan CS kami. Terima kasih telah bergabung!');
+            form.reset();
+          } else {
+            alert('Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.');
+          }
+
+          isSubmitting = false;
+        })
+        .catch(error => {
+          alert('Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.');
+          console.error('Error!', error.message);
+
+          isSubmitting = false;
+        });
+    });
+
+  </script>
+
+  <script>
+    flatpickr("#tanggal", {
+      dateFormat: "j F Y",
+      altInput: true,
+      altFormat: "j F Y",
+      disableMobile: true,
+      onChange: function (selectedDates, dateStr, instance) {
+        instance.element.blur();
+      },
+      onReady: function (selectedDates, dateStr, instance) {
+        instance.element.blur();
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.ctrlKey && e.keyCode == 85) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+
+</html>
