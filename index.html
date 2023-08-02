@@ -26,6 +26,7 @@
           <option value="Livia">Livia</option>
           <option value="Reka">Reka</option>
           <option value="Risma">Risma</option>
+          <option value="Erna">Erna</option>
         </select>
       </div>
       <div class="form-input">
@@ -43,6 +44,7 @@
         <label for="franchise">Nama Franchise:</label>
         <select id="franchise" name="nama-franchise" onchange="showInputForms()">
           <option value="">--Pilih Franchise--</option>
+          <option value="Gerobak Jafabooth">JafaBooth</option>
           <option value="You Need Mie">You Need Mie</option>
           <option value="Mentoast">Mentoast</option>
           <option value="My Bestea">My Bestea</option>
@@ -345,7 +347,6 @@
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
           if (response.ok) {
-            alert('Formulir terkirim! Silakan konfirmasi dengan CS kami. Terima kasih telah bergabung!');
             form.reset();
           } else {
             alert('Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.');
